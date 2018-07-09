@@ -1,4 +1,4 @@
-package com.servlet;
+package com.babich.servlet;
 
 import com.babich.dao.JdbcUserDao;
 import com.babich.entity.User;

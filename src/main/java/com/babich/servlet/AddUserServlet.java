@@ -1,8 +1,7 @@
-package com.servlet;
+package com.babich.servlet;
 
 import com.babich.dao.JdbcUserDao;
 import com.babich.entity.User;
-import com.babich.service.UserService;
 import com.babich.web.PageGenerator;
 
 import javax.servlet.ServletException;
@@ -12,7 +11,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
-import java.sql.Timestamp;
 
 @WebServlet (urlPatterns = "/user/add")
 public class AddUserServlet extends HttpServlet {

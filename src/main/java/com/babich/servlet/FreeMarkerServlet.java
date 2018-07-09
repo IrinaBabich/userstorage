@@ -1,4 +1,4 @@
-package com.servlet;
+package com.babich.servlet;
 
 import com.babich.entity.User;
 import com.babich.web.PageGenerator;
