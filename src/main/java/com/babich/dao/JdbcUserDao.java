@@ -57,13 +57,15 @@ public class JdbcUserDao {
 
     public void save(User user) throws SQLException {
         Connection connection = getConnection();
+        Statement statement = connection.createStatement();
 
-        String sql = "INSERT INTO USERS (salary, firstName, lastName, datePfBirth)";
-        PreparedStatement preparedStatement = connection.prepareStatement(sql);
-        preparedStatement.setString(1, String.valueOf(user.getSalary()));
-        preparedStatement.setString(2, user.getFirstName());
-        preparedStatement.setString(3, user.getLastName());
-        preparedStatement.setString(4, String.valueOf(user.getDateOfBirth()));
+        String sql = "INSERT INTO USERS (salary, firstName, lastName, dateOfBirth) VALUES( '" +
+        user.getFirstName() + "', '" +
+                user.getLastName() + "', " +
+                user.getSalary() + ", '" +
+                user.getDateOfBirth() +
+                "');";
+        statement.executeUpdate(sql);
+
     }
-
 }
