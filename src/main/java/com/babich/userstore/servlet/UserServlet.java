@@ -15,10 +15,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@WebServlet (name = "users", loadOnStartup = 1, urlPatterns = "/users")
 public class UserServlet extends HttpServlet {
-    UserService userService = new UserService();
-    JdbcUserDao jdbcUserDao = new JdbcUserDao();
+    UserService userService;
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -32,6 +30,6 @@ public class UserServlet extends HttpServlet {
     }
 
     public void setUserService(UserService userService) {
-        userService.setJdbcUserDao(jdbcUserDao);
+        this.userService = userService;
     }
 }

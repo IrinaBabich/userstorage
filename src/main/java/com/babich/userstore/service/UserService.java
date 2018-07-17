@@ -6,7 +6,7 @@ import com.babich.userstore.entity.User;
 import java.util.List;
 
 public class UserService {
-    private JdbcUserDao jdbcUserDao = new JdbcUserDao();
+    private JdbcUserDao jdbcUserDao;
 
     public void setJdbcUserDao(JdbcUserDao jdbcUserDao) {
         this.jdbcUserDao = jdbcUserDao;

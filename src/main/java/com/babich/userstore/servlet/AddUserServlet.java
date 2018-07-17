@@ -12,7 +12,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
 
-@WebServlet (urlPatterns = "/user/add")
 public class AddUserServlet extends HttpServlet {
     private JdbcUserDao jdbcUserDao = new JdbcUserDao();
 
