@@ -1,4 +1,4 @@
-package com.babich.entity;
+package com.babich.userstore.entity;
 
 public class User {
     private int id;

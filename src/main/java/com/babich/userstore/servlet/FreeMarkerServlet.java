@@ -1,7 +1,7 @@
-package com.babich.servlet;
+package com.babich.userstore.servlet;
 
-import com.babich.entity.User;
-import com.babich.web.PageGenerator;
+import com.babich.userstore.entity.User;
+import com.babich.userstore.web.PageGenerator;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;

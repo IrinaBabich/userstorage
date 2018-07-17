@@ -1,6 +1,6 @@
-package com.babich;
+package com.babich.userstore;
 
-import com.babich.servlet.UserServlet;
+import com.babich.userstore.servlet.UserServlet;
 import freemarker.ext.servlet.FreemarkerServlet;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;

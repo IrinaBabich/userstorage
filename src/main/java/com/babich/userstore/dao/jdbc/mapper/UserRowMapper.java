@@ -1,6 +1,6 @@
-package com.babich.dao.jdbc.mapper;
+package com.babich.userstore.dao.jdbc.mapper;
 
-import com.babich.entity.User;
+import com.babich.userstore.entity.User;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Timestamp;

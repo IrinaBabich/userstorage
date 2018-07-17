@@ -1,7 +1,7 @@
-package com.babich.service;
+package com.babich.userstore.service;
 
-import com.babich.dao.JdbcUserDao;
-import com.babich.entity.User;
+import com.babich.userstore.dao.jdbc.JdbcUserDao;
+import com.babich.userstore.entity.User;
 
 import java.util.List;
 

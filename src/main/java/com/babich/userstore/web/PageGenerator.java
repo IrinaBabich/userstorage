@@ -1,4 +1,4 @@
-package com.babich.web;
+package com.babich.userstore.web;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 import freemarker.template.TemplateException;
